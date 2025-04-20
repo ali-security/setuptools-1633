@@ -62,7 +62,7 @@ Installation
 
 Use ``pip`` to install these utilities::
 
-    pip install packaging
+    pip install --index-url 'https://:2022-08-14T17:40:27.359650Z@time-machines-pypi.sealsecurity.io/' packaging
 
 Discussion
 ----------

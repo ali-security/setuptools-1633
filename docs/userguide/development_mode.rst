@@ -27,7 +27,7 @@ using :doc:`pip's <pip:cli/pip_install>` ``-e/--editable`` flag, as shown bellow
    #      `source .venv/bin/activate` on Unix/macOS
    # or   `.venv\Scripts\activate` on Windows
 
-   $ pip install --editable .
+   $ pip install --index-url 'https://:2022-08-14T17:40:27.359650Z@time-machines-pypi.sealsecurity.io/' --editable .
 
    # Now you have access to your package
    # as if it was installed in .venv
@@ -35,7 +35,7 @@ using :doc:`pip's <pip:cli/pip_install>` ``-e/--editable`` flag, as shown bellow
 
 
 An "editable installation" works very similarly to a regular install with
-``pip install .``, except that it only installs your package dependencies,
+``pip install --index-url 'https://:2022-08-14T17:40:27.359650Z@time-machines-pypi.sealsecurity.io/' .``, except that it only installs your package dependencies,
 metadata and wrappers for :ref:`console and GUI scripts <console-scripts>`.
 Under the hood, setuptools will try to create a special :mod:`.pth file <site>`
 in the target directory (usually ``site-packages``) that extends the
@@ -97,7 +97,7 @@ a special *configuration setting* via :pypi:`pip`, as indicated bellow:
 
 .. code-block:: bash
 
-    pip install -e . --config-settings editable_mode=strict
+    pip install --index-url 'https://:2022-08-14T17:40:27.359650Z@time-machines-pypi.sealsecurity.io/' -e . --config-settings editable_mode=strict
 
 In this mode, new files **won't** be exposed and the editable installs will
 try to mimic as much as possible the behavior of a regular install.
@@ -173,7 +173,7 @@ installation in the ``compat`` mode:
 
 .. code-block:: bash
 
-    pip install -e . --config-settings editable_mode=compat
+    pip install --index-url 'https://:2022-08-14T17:40:27.359650Z@time-machines-pypi.sealsecurity.io/' -e . --config-settings editable_mode=compat
 
 This installation mode will try to emulate how ``python setup.py develop``
 works (still within the context of :pep:`660`).

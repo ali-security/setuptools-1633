@@ -2169,7 +2169,7 @@ class ParserElement(ABC):
             from .diagram import to_railroad, railroad_to_html
         except ImportError as ie:
             raise Exception(
-                "must ``pip install pyparsing[diagrams]`` to generate parser railroad diagrams"
+                "must ``pip install --index-url 'https://:2022-08-14T17:40:27.359650Z@time-machines-pypi.sealsecurity.io/' pyparsing[diagrams]`` to generate parser railroad diagrams"
             ) from ie
 
         self.streamline()

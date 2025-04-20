@@ -60,7 +60,7 @@ Assuming, of course, that the ``foo`` class in ``mypackage.some_module`` is
 a ``setuptools.Command`` subclass (documented bellow).
 
 Once a project containing such entry points has been activated on ``sys.path``,
-(e.g. by running ``pip install``) the command(s) will be available to any
+(e.g. by running ``pip install --index-url 'https://:2022-08-14T17:40:27.359650Z@time-machines-pypi.sealsecurity.io/'``) the command(s) will be available to any
 ``setuptools``-based project. In fact, this is
 how setuptools' own commands are installed: the setuptools project's setup
 script defines entry points for them!
